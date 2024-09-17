@@ -152,12 +152,12 @@ button {
 
 .navbar {
     padding: 10px 0 !important;
-    background: transparent !important;
+    background: white !important;
     z-index: var(--z-fixed);
 }
 
 .navbar-brand {
-    color: #fffff0 !important;
+    color: var(--first-color) !important;
     font-size: var(--h3-font-size) !important;
     font-family: "Playfair Display", serif !important;
     font-weight: 900;
@@ -174,7 +174,7 @@ button {
 }
 
 .navbar-toggler i {
-    color: #fff !important;
+    color: var(--first-color) !important;
     font-size: 1.5rem;
 }
 
@@ -386,7 +386,14 @@ button {
 
 /* --=== Footer === */
 .footer {
+    padding: 4.5rem 0 3.5rem;
     background: linear-gradient(170deg,hsl(0, 0%, 22%) 0%,hsl(0, 0%, 6%) 30%);
+}
+
+.footer-logo {
+    color: var(--first-color) !important;
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
 }
 
 .links {
@@ -395,8 +402,12 @@ button {
     font-size: var(--small-font-size);
 }
 
+.links:hover {
+    color: var(--first-color);
+}
+
 .footer-subtitle {
-    color: var(--blue-color);
+    color: var(--first-color) !important;
     font-size: var(--h3-font-size);
     font-weight: var(--font-semi-bold);
     margin-bottom: 7px;
