@@ -9,11 +9,17 @@ window.addEventListener('scroll', scrollHeader)
 
 /*============== REVIEW SWIPER ===============*/
 var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
     cssMode: true,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
     mousewheel: true,
     keyboard: true,
-  });
+});
