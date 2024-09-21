@@ -42,3 +42,20 @@ valueDisplays.forEach((valueDisplays) => {
         }
     }, duration);
 });
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal ({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 200,
+    reset: true
+})
+
+sr.reveal('.about-subtitle, .feature-title, .product-title, .blog-title')
+sr.reveal('.about-box', {interval: 70, delay: 600, origin: 'bottom'})
+sr.reveal('.about-icon, .feature-box, .product-card, .card, .footer-div', {interval: 90})
+sr.reveal('.swiper-wrapper', {interval: 70, delay: 600})
+sr.reveal('.about-image, .testimonial-title, .faq-contentt', {origin: 'left'})
+sr.reveal('.about-title, .testimonial-box, .faq-content', {origin: 'right'})
+sr.reveal('.about-text', {origin: 'right', delay: 500})
