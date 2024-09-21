@@ -428,6 +428,36 @@ button {
     left: 80% !important;
 }
 
+/* --=== Category === */
+.category-box {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.category-box:hover {
+    border: 1px solid #DB4444;
+    background-color: #DB4444;
+}
+
+.category-box:hover .category-text {
+    color: #fff;
+}
+
+.red {
+    border: 1px solid #DB4444;
+    background-color: #DB4444;
+}
+
+.red .category-text {
+    color: #fff;
+}
+
 /* --=== Product === */
 .product {
     background-color: #f8f9fab3;
@@ -492,16 +522,13 @@ button {
     font-size: var(--small-font-size);
 }
 
-
-
-
 /* --=== Blog === */
 .blog-title {
     font-weight: var(--font-semi-bold);
 }
 
 .blog-title span {
-    color: purple;
+    color: #44d2f6;
     font-style: italic;
 }
 
@@ -657,6 +684,12 @@ button {
     color: var(--text-color-light);
 }
 
+@media (max-width: 576px) {
+    .carousel-indicators [data-bs-target] {
+        width: 10px !important;
+    }
+}
+
 @media (min-width: 768px) {
     .swiper-button-prev {
         left: 90% !important;
@@ -666,7 +699,11 @@ button {
         width: 100% !important;
         padding: 0 !important;
         background-color: #102147;
-    }    
+    }   
+    
+    .carousel-indicators [data-bs-target] {
+        width: 20px !important;
+    }
 }
 
 @media screen and (min-width: 997px) {
